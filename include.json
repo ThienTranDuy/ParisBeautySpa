@@ -7,6 +7,22 @@
             "footer": [
                 "footer/f-12"
             ]
+		},
+		"news": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "news/n-3"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
+		"nav-tab": {
+            "body": [
+                "nav-tab/n-1"
+            ]
         }
     }
 }
