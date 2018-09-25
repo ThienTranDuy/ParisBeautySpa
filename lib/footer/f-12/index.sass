@@ -1,0 +1,54 @@
+@import ../../_includes
+
+.canhcam-footer-12
+	// Social
+	.footer-social
+		.social
+			+pad(r(35px) null r(28px))
+			box-shadow: 0 1px color-get($mau, trang)
+			.social-list 
+				// +media-breakpoint-down(sm)
+				// 	+mar(1rem null 0 null)
+				.list-inline
+					+mar(0)
+					.list-inline-item
+						+fz(r(18px))
+						height: 40px
+						width: 40px
+						line-height: r(40px)
+						text-align: center
+						+bg-rad-2
+						margin: 0 r(10px) !important
+						border-radius: 50%
+						+media-breakpoint-down(lg)
+							+mar(null r(10px))
+						i
+							color: color-get($mau, trang)
+	.footer-content
+		+media-breakpoint-up(md)
+			+pad(2rem null)
+		//- Khi lên PC
+		+media-breakpoint-up(lg)
+			+pad(r(32px) null 2rem)
+		//- Content
+		.box-footer
+			margin-bottom: r(32px)
+			h4
+				+fz(r(18px))
+				color: color-get($mau, nau-1)
+				margin-bottom: r(14px)
+			p
+				margin-bottom: r(10px)
+				a
+					+fz(r(14px))
+					color: color-get($mau, den-2)
+					text-decoration: none
+					
+		//- Logo
+		.footer-logo
+			+pad(r(32px) null)
+	.copy-right
+		+bg-rad-1
+		+fz(r(13px))
+		color: color-get($mau, trang)
+		+pad(r(20px) 0) 
