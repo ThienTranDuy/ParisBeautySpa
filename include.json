@@ -1,0 +1,12 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-14"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        }
+    }
+}
