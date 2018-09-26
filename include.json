@@ -94,6 +94,29 @@
             "footer": [
                 "footer/f-12"
             ]
-        }
+		},
+		"contact": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "/contact/c-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+		},
+		"promotion": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "/promotion/p-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+		}
+		
     }
 }
