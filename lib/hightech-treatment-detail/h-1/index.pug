@@ -1,0 +1,53 @@
+section.canhcam-hightech-treatment-detail-news-details-1
+	article.news-details
+		.container
+			.row
+				.col-lg-8
+					.news-read
+						h1 Triệt lông thượng bì bằng công nghệ Dios Laser
+						time 01/06/18 10:27 GMT+7
+						.card
+							.card-body.p-0.font-italic Làn da sạm, nhiều lông, đã từng khiến bạn tự ti về bản thân của mình. Giấc mơ được diện những bộ cánh thời thượng quyến rũ của bạn giờ đây sẽ thành hiện thực với công nghệ triệt lông vĩnh viễn Diode Laser.
+						p.lead Triệt lông vĩnh viễn, hiệu quả ngay sau 4-6 lần điều trị
+						p Da ở vùng triệt trắng sáng, mịn màng, se khít lỗ chân lông
+						p Tự tin diện nhiều trang phục sexy, quyến rũ
+						p Nữ tính và hấp dẫn hơn trong mắt bạn khác giới
+						p Tạo được nhiều cơ hội thành công trong cuộc sống
+						a.item-news-read.d-flex.justify-content-center.align-items-center.text-center(href="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_1.png")
+							figure
+								img.img-fluid(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_1.png", alt="Lorem ipsum dolor, sit amet consectetur adipisicing elit.")
+								figcaption.text-center.font-italic Triệt lông vĩnh viễn công nghệ Dios Laser
+						p.lead Quy trình điều trị
+						p Bước 1: Bác sĩ thăm khám trực tiếp và tư vấn cụ thể cho khách hàng về công nghệ triệt lông Diode Laser và đưa ra liệu trình phù hợp
+						p Bước 2: Làm sạch vùng lông cần điều trị bằng cách cạo bớt lông để các bước sóng Laser được hấp thụ tối đa
+						p Bước 3: Thoa 1 lớp gel lạnh lên vùng da cần điều trị để giúp lông mềm hơn và không gây ra cảm giác khó chịu
+						p Bước 4: Kỹ thuật viên đi bước song phù hợp và chiếu Laser vào vùng lông càn triệt
+						p Bước 5: Thoa kem dưỡng và kết thúc quy trình điều trị
+						.social-networks.nav
+							.nav-item
+								.fb-share-button(data-href='', data-layout='button', data-size='small', data-mobile-iframe='true')
+									a.fb-xfbml-parse-ignore(target='_blank', href='') Chia sẻ
+							.nav-item
+								a.twitter-share-button(href='https://twitter.com/share', data-size='medium', data-text='custom share text', data-url='', data-via='twitterdev', data-related='twitterapi,twitter') Tweet
+							.nav-item
+								.g-plusone(data-size="tall")
+
+				.col-lg-4
+					.othernews(data-fix="50", data-fix-type="initial", data-fix-change="sticky")
+						h2.text-uppercase Dịch vụ khác
+						.lists
+							-var i = 2
+							each val, index in ['trị nám xóa thâm với công nghệ cao laser', 'công nghệ giảm mở hifu', 'điều trị nám thượng bì công nghệ ipl']
+								a.item(href="javascript:void(0)")
+									if i == 2
+										figure.d-flex.box-1
+											img(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_"+i+".png", alt="alt")
+											figcaption
+												h3.text-uppercase= val
+												- i++
+									else
+										figure.d-flex
+											img(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_"+i+".png", alt="alt")
+											figcaption
+												h3.text-uppercase= val
+												- i++

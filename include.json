@@ -19,9 +19,80 @@
                 "footer/f-12"
             ]
         },
+		"news-detail": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "news-detail/n-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
 		"nav-tab": {
             "body": [
                 "nav-tab/n-1"
+            ]
+        },
+		"panigation": {
+            "body": [
+                "panigation/p-1"
+            ]
+        },
+		"beautify-service": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "beautify-service/s-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
+		"hightech-rejuvenation": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "/hightech-rejuvenation/h-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
+		"hightech-rejuvenation-detail": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "/hightech-rejuvenation-detail/h-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
+		"hightech-treatment": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "/hightech-treatment/h-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
+		"hightech-treatment-detail": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "/hightech-treatment-detail/h-1"
+            ],
+            "footer": [
+                "footer/f-12"
             ]
         }
     }

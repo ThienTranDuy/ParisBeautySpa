@@ -3,14 +3,11 @@
 .nav-news, .custom-select
 	margin-bottom: r(40px)
 	.nav-item
-		+mar(0 r(10px))
-		width: r(260px)
-		box-shadow: inset 0px 0px 0px 1px color-get($mau, den-3)
+		+mar(0 r(5px))
+		width: r(210px)
 		border-radius: none
 		+transition(all .5s ease-in-out)
-		+media-breakpoint-down(md)
-			&:last-child
-				margin-top: r(20px)
+		box-shadow: inset 0px 0px 0px 1px color-get($mau, xam-4)
 		&:hover
 			+bg-rad-1
 			box-shadow: none
@@ -19,19 +16,19 @@
 		.nav-link
 			+fz(r(15px))
 			+pad(0rem)
-			line-height: 40px
+			line-height: r(40px)
 			color: color-get($mau, den-3)
 	.active
 		+bg-rad-1
 		box-shadow: none
 //- Mobile
 .custom-select
-	+fz(r(15px))
-	height: 40px
-	color: color-get($mau, trang)
-	border-radius: 0
-	text-align-last: center
-	text-align: center
 	+bg-rad-1
+	height: 40px
+	+fz(r(15px))
+	border-radius: 0
+	text-align: center
+	text-align-last: center
+	color: color-get($mau, trang)
 	option
 		background: color-get($mau, main)
