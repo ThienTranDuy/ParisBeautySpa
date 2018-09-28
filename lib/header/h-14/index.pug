@@ -4,86 +4,135 @@ header.canhcam-header-14
 		#language
 		button.k-button-toggle.navbar-toggler(k-toggle-for="#demoResAllInOneMenu")
 			i.mdi.mdi-menu
-	.topbar.w-100.bg-light 
+	.topbar.w-100
 		.container.d-flex
 			ul.contactinfo.mr-auto(k-menu-map-to="#contactinfo")
-				li.line
-					span.link 090909090808
-				li 
-					a(href="#") Register
-				li 
-					a(href="#") Login
-			ul.social(k-menu-map-to="#social")
+				li.line.text-center.text-lg-left
+					span.link
+						i.mr-2.fas.fa-phone
+						| 028 2228 93 93
+				li.text-center.text-lg-left
+					span.link Thứ 2 - Chủ Nhật (9:00 - 21:00)
+			//- ul.social(k-menu-map-to="#social")
+			//- 	li
+			//- 		a(href='#') 
+			//- 			em.fab.fa-facebook-f
+			//- 	li
+			//- 		a(href='#') 
+			//- 			em.fab.fa-twitter
+			//- ul.language(k-menu-map-to="#language")
+			//- 	li
+			//- 		a(href='#') 
+			//- 			img(src="./img/icon/usa.png", alt="")
+			//- 			span EN
+			//- 	li
+			//- 		a(href='#')
+			//- 			img(src="./img/icon/usa.png", alt="")
+			//- 			span EN
+			//- .searchbar(k-menu-map-to="#searchbar")
+			//- 	.input-group
+			//- 		input.form-control(type='text', placeholder="Search", aria-label="Search", aria-describedby='basic-addon2')
+			//- 		.input-group-append
+			//- 			button.btn.btn-primary(type='submit')
+			//- 				i.fa.fa-search
+			ul.contact(k-menu-map-to="#contact")
 				li
-					a(href='#') 
-						em.fab.fa-facebook-f
-				li
-					a(href='#') 
-						em.fab.fa-twitter
-			ul.language(k-menu-map-to="#language")
-				li
-					a(href='#') 
-						img(src="./img/icon/usa.png", alt="")
-						span EN
-				li
-					a(href='#')
-						img(src="./img/icon/usa.png", alt="")
-						span EN
-			.searchbar(k-menu-map-to="#searchbar")
-				.input-group
-					input.form-control(type='text', placeholder="Search", aria-label="Search", aria-describedby='basic-addon2')
-					.input-group-append
-						button.btn.btn-primary(type='submit')
-							i.fa.fa-search
+					a.nav-link(href="#")
+						span Tin tức
+				li.active
+					a.nav-link(href="#")
+						span Liên hệ
 	#demoResAllInOneMenu.container.k-responsive-menu
 		.k-menu-bar
 			.k-logo.navbar-brand.mr-auto
-				img(src="./img/logo-ang.png", alt="")
+				img(src="./img/logo_parisbeautyspa.png", alt="")
 			button.k-button-toggle.navbar-toggler(k-toggle-for="#demoResAllInOneMenu")
 				i.mdi.mdi-close
 		.k-logo.navbar-brand(k-menu-map-to="#logo")
-			img(src="./img/logo.png", alt="")
+			img(src="./img/logo_parisbeautyspa.png", alt="")
 		.mainnav.ml-auto
-			#searchbar
-			ul.advbar(k-menu-map-to="#advbar") 
-				li
-					span.link 
-						em.fa.fa-fw.fa-phone
-						span.textinfo
-							span Call 
-							strong 19001234
-				li 
-					a(href="#") 
-						em.fa.fa-fw.fa-shopping-cart
-						span.textinfo
-							span Your cart 
-							span.badge.badge-primary 1
-				li 
-					a(href="#") 
-						em.fa.fa-fw.fa-bell
-						span.textinfo
-							span Your promotion 
-							span.badge.badge-danger 10
 			ul.nav
 				li.nav-item.active
-					a.nav-link(href='#') Dropdown Hover
+					a.nav-link(href="#")
+						i.d-none.d-lg-block.fas.fa-home
+						p.d-lg-none Trang chủ
+				li.nav-item
+					a.nav-link(href='#') Về chúng tôi
 				li.nav-item.dropdown
-					a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', dropdown-type="hover")
-						| Dropdown
-					.dropdown-menu.dropdown-arrow(aria-labelledby='navbarDropdown')
-						a.dropdown-item(href='#') Action
-						a.dropdown-item(href='#') Another action
-						.dropdown-divider
-						a.dropdown-item(href='#') Something else here
+					a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', dropdown-type="hover")
+						| Dịch vụ làm đẹp
+					.dropdown-menu(aria-labelledby='navbarDropdown')
+						.row
+							.col-lg-3.mb-3
+								a.h2(href="#") Định hình gương mặt không phẫu thuật
+							.col-lg-3.mb-3
+								a.h2(href="#") Liệu pháp  Mesotherapy
+								ul
+									li
+										a.dropdown-item(href='#') Căng bóng trắng sâng da
+									li
+										a.dropdown-item(href='#') Thon gọn khuôn mặt
+							.col-lg-3.mb-3
+								a.h2(href="#") Trẻ hóa năng cơ săn chắc da
+								ul
+									li
+										a.dropdown-item(href='#') Nâng cơ 3D
+									li
+										a.dropdown-item(href='#') Mặt nạ nhiệt cứng
+									li
+										a.dropdown-item(href='#') Nghệ thuật cho làn da
+									li
+										a.dropdown-item(href='#') Mặt nạ vàng
+							.col-lg-3.mb-3
+								a.h2(href="#") Điều trị
+								ul
+									li
+										a.dropdown-item(href='#') Trị mụn
+									li
+										a.dropdown-item(href='#') Trị sẹo lỗ
+						.dropdown-divider.mb-4
+						.row
+							.col-lg-3.mb-3
+								a.h2(href="#") Chăm sóc da chuyên nghiệp
+								ul
+									li
+										a.dropdown-item(href="#") Làm sạch sâu cân bằng độ ẩm cho mọi loại da
+									li
+										a.dropdown-item(href="#") Trắng sáng da với tinh chất Dimond Thụy Sỹ
+									li
+										a.dropdown-item(href="#") Giải độc cho da 
+									li
+										a.dropdown-item(href="#") Phục hồi da nhạy cảm, tổn thương
+							.col-lg-3.mb-3
+								a.h2(href="#") Chăm sóc vùng mắt
+								ul
+									li
+										a.dropdown-item(href='#') Trẻ hóa, xóa nhăn vùng mắt
+									li
+										a.dropdown-item(href='#') Điều trị thâm quầng mât
+							.col-lg-3.mb-3
+								a.h2(href="#") Chăm sóc cơ thể
+								ul
+									li
+										a.dropdown-item(href='#') Giảm mở toàn thân
+									li
+										a.dropdown-item(href='#') Trắng sáng toàn thân
+									li
+										a.dropdown-item(href='#') Thanh lọc, giải độc toàn thân
+									li
+										a.dropdown-item(href='#') Thư giản cơ thể
+							.col-lg-3
+								a.h2(href="#") Dịch vụ khác
+								ul
+									li
+										a.dropdown-item(href='#') Kich thích mọc tóc
 				li.nav-item
-					a.nav-link(href='#') Something else here
+					a.nav-link(href='#') Trẻ hóa với công nghệ cao
 				li.nav-item
-					a.nav-link(href='#') Something else here
+					a.nav-link(href='#') Điều trị công nghệ cao
 				li.nav-item
-					a.nav-link(href='#') Shop
-				li.nav-item
-					a.nav-link(href='#') Contact us
-			#advbar
+					a.nav-link(href='#') Ưu đãi
+			//- #advbar
 			#contactinfo
 			#social
 
