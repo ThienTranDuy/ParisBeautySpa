@@ -1,0 +1,41 @@
+section.canhcam-form-1
+	.container
+		.row.info
+			.col-md-5.col-lg-4.order-md-2
+				article.inf.h-100
+					h3.text-center.text-md-left Địa chỉ
+					p.text-center.text-md-left <i class="fas fa-home"></i> 260 Nguyễn Đình Chiểu, P.6, Q.3, Tp.HCM
+					p.text-center.text-md-left <i class="fas fa-phone"></i> 0251 3836 251
+					p.text-center.text-md-left 0251 3836 086
+					p.text-center.text-md-left <i class="fas fa-envelope"></i> info@berylspa.com.vn
+					p.text-center.text-md-left <i class="fas fa-globe"></i> www.berylspa.com.vn
+			.col-md-7.col-lg-8
+				h1 Liên hệ
+				form.validator
+					.row
+						.form-group.col-md-6
+							label(for='name') Name
+								span.text-danger (*)
+							input#name.form-control(type='text', placeholder='Name', data-error="Vui lòng nhập thông tin", required)
+							.help-block.with-errors
+						.form-group.col-md-6
+							label(for='Email') Email
+							input#Email.form-control(type='text', placeholder='Email', data-error="Vui lòng nhập thông tin", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required)
+							.help-block.with-errors
+					.row
+						.form-group.col-md-6
+							label(for='Phone') Phone
+							input#Phone.form-control(type='text', placeholder='Phone', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
+							.help-block.with-errors
+						.form-group.col-md-6
+							label(for='Address') Address
+							input#Address.form-control(type='text', placeholder='Address')
+					.row
+						.form-group.col
+							label(for='sms') Message
+							textarea#sms.form-control(name="sms", cols="30", rows="5")
+
+					.row
+						.col
+							button.btn-contact.text-uppercase(type="submit")
+								| Gửi
