@@ -1,0 +1,48 @@
+@import ../../_includes
+
+//- Mobile
+.custom-select
+	+bg-rad-1
+	+fz(r(15px))
+	height: 40px
+	border-radius: 0
+	text-align: center
+	text-align-last: center
+	color: color-get($mau, trang)
+	option
+		background: color-get($mau, main)
+	//- laptop, desktop
+.nav-news, .custom-select
+	margin-bottom: r(40px)
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	text-transform: uppercase
+	.nav-item
+		width: r(210px)
+		border-radius: none
+		box-shadow: inset 0px 0px 0px 1px color-get($mau, xam-4)
+		+transition(all .3s ease-in-out)
+		+mar(0 r(5px))
+		&:active
+			+bg-rad-1
+			box-shadow: none
+			.nav-link
+				color: color-get($mau, trang)
+		+media-breakpoint-up(md)
+			&:hover
+				+bg-rad-1
+				box-shadow: none
+				.nav-link
+					color: color-get($mau, trang)
+		.nav-link
+			+fz(r(15px))
+			+pad(0rem)
+			line-height: r(40px)
+			color: color-get($mau, den-3)
+	.active
+		+bg-rad-1
+		box-shadow: none
+		.nav-link
+			color: color-get($mau, trang)

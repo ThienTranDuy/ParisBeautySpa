@@ -1,0 +1,12 @@
+section.canhcam-pagination-1
+	.container
+		.row.pagelist
+			.col.d-flex.align-items-center.justify-content-center
+				ul.pagination
+					each val, index in ['1','2','3','4']
+						if(index == 0)
+							li.page-item.active
+								a.page-link.d-flex.align-item-center.justify-content-center(href="javascript:void(0)", title="title")= val
+						else
+							li.page-item
+								a.page-link.d-flex.align-item-center.justify-content-center(href="javascript:void(0)", title="title")= val

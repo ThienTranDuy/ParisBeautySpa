@@ -1,0 +1,8 @@
+ul.nav.nav-pills.nav-news(data-select)
+	each val, index in ['Kiến thức làm đẹp', 'Sự kiện làm đẹp', 'Tuyển dụng']
+		if(index == 0)
+			li.nav-item.active
+				a.nav-link(href="javascript:void(0)")= val
+		else
+			li.nav-item
+				a.nav-link(href="javascript:void(0)")= val

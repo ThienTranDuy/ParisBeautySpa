@@ -1,0 +1,15 @@
+section.canhcam-hightech-treatment-news-3
+	article.news_list
+		.container
+			h1.h1.text-center.text-uppercase Trẻ hóa với công nghệ cao
+			.row#products
+				-var i = 1
+				each val, index in ['Trị nám, xóa thâm công nghệ cao Laser', 'công nghệ giảm mở HIFU', 'điều trị sẹo rỗ, công nghệ co2', 'triệt lông công nghệ dios laser', 'điều trị nám thượng bì công nghệ laser', 'xóa thâm không sẹo công nghệ laser']
+					.col-sm-6.col-lg-4
+						a.item(href="javascript:void(0)")
+							figure
+								img(src="./img/parisbeautyspa/hightech-treatment/hightech_treatment_"+i+".png", alt="alt")
+								figcaption
+									time 21.06.2018
+									h3= val
+									- i++

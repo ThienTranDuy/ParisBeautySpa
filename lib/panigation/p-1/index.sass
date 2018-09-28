@@ -1,0 +1,33 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-pagination-1
+	.pagelist
+		.pagination
+			margin-bottom: 0
+			.page-item
+				+mar(0 r(5px))
+				.page-link
+					width: r(38px)
+					height: r(38px)
+					+bor-rad(50% 50%)
+					color: color-get($mau, xam-3)
+					+transition(all .5s ease-in-out)
+					background: color-get($mau, xam-5)
+					border-color: color-get($mau, xam-5)
+					&:active
+						color: color-get($mau, den-4)
+						background: color-get($mau, trang)
+						border-color: color-get($mau, main)
+					+media-breakpoint-up(md)
+						&:hover
+							color: color-get($mau, den-4)
+							background: color-get($mau, trang)
+							border-color: color-get($mau, main)
+				&.active
+					.page-link
+						color: color-get($mau, den-4)
+						background: color-get($mau, trang)
+						border-color: color-get($mau, main)

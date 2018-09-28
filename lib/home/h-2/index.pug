@@ -1,0 +1,32 @@
+section.canhcam-home-2
+	.container
+		.row
+			.col-md-8.title
+				h2 dịch vụ nổi bật
+				p Cùng Paris Beauty trải nghiệm những dịch vụ chăm sóc da được nhiều khách hàng tin dùng và lựa chọn nhiều nhất trong mỗi cuộc hẹn.
+		.row
+			-var i = 2
+				each val in ['phục hồi da lão hoá', 'Chăm sóc da chuyên nghiệp', 'Trắng sáng làn da']
+					.col-sm-6.col-lg-4
+						a.item(href="javascript:void(0)")
+							figure
+								.box
+									.img
+										img(src="./img/parisbeautyspa/home/home_"+i+".png", alt="alt")
+									figcaption.match
+										h3= val
+										- i++
+			-var i = 2
+				each val in ['phục hồi da lãoC hoá', 'Chăm sóc da chuyên nghiệp', 'Trắng sáng làn da']
+					.col-sm-6.col-lg-4
+						a.item(href="javascript:void(0)")
+							figure
+								.box
+									.img
+										img(src="./img/parisbeautyspa/home/home_"+i+".png", alt="alt")
+									figcaption.match
+										h3= val
+										- i++
+		.row
+			.col.btn-home
+				a.btn-more(href="javascript:void(0)") Xem thêm

@@ -1,0 +1,47 @@
+@import ../../_includes
+//- FOOTER
+.canhcam-footer-12
+	//- TOP
+	.footer-social
+		.social
+			+pad(r(35px) null r(28px))
+			box-shadow: 0 1px color-get($mau, trang)
+			.list-inline
+				+mar(0)
+				.list-inline-item
+					+bg-rad-2
+					+fz(r(18px))
+					width: 40px
+					height: 40px
+					line-height: 40px
+					border-radius: 50%
+					margin: 0 r(10px) !important
+					+media-breakpoint-down(lg)
+						+mar(null r(10px))
+	//- BODY
+	.footer-content
+		+media-breakpoint-up(md)
+			+pad(2rem null)
+		+media-breakpoint-up(lg)
+			+pad(r(32px) null 2rem)
+		//- Left body
+		.box-footer
+			margin-bottom: r(32px)
+			h4
+				+fz(r(18px))
+				margin-bottom: r(14px)
+				color: color-get($mau, nau-1)
+			p
+				margin-bottom: r(10px)
+				a
+					+fz(r(14px))
+					text-decoration: none
+					color: color-get($mau, den-2)
+		//- Right body
+		.footer-logo
+			+pad(r(32px) null)
+	//- END
+	.copy-right
+		+bg-rad-1
+		+fz(r(13px))
+		+pad(r(20px) 0)

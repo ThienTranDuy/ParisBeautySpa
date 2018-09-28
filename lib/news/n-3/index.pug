@@ -1,0 +1,20 @@
+section.canhcam-news-3
+	article.news_list
+		.container
+			h1 Tin tức
+			include ../../nav-tab/n-1/index.pug
+			.row#products
+				-var i = 1
+				each val, index in ['5 BÍ QUYẾT CHĂM SÓC VÀ BẢO VỆ DA NGÀY HÈ', 'Phụ nữ trên 55 phục hồi da lão hóa thế nào?', 'Tươi trẻ tuổi 30 nhờ bí quyết chăm sóc da lão hóa', '5 loại thực phẩm giúp chống lão hóa từ bên trong', 'Cách làm đẹp da mặt với 8 kiến thức căn bản', 'Sử dụng sữa rửa mặt đúng cách để có làn da khỏe mạnh', 'Lão hóa da độ tuổi 20, bạn có ‘trẻ’ như mình nghĩ?', 'Chăm sóc và làm chậm lão hóa da độ tuổi trên 45', 'Chăm sóc hàng ngày cho da nhạy cảm']
+					.col-sm-6.col-lg-4
+						a.item(href="javascript:void(0)")
+							figure
+								img(src="./img/parisbeautyspa/news/news_"+i+".png", alt="alt")
+								figcaption
+									time 21.06.2018
+									h3= val
+									- i++
+			//- Panigation
+			.row
+				.col
+					include ../../panigation/p-1/index.pug

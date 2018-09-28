@@ -1,0 +1,29 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem, 0)
+	h2 
+		+fz(r(30px))
+		text-align: center
+		text-transform: uppercase
+		color: color-get($mau, main)
+		margin-bottom: r(22.5px)
+	figure
+		img
+			width: 100%
+	h3
+		+fz(r(16px))
+		+fw(bold)
+		text-transform: uppercase
+	p
+		+fz(r(15px))
+	.box-content
+		background: url('../img/parisbeautyspa/background/home_bg_1.png') no-repeat
+		display: flex
+		justify-content: center
+		align-items: center

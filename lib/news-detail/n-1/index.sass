@@ -1,0 +1,51 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-news-detail-news-details-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	//- left
+	.news-read
+		h1
+			+fz(r(25px))
+			color: color-get($mau, cam-3)
+		time
+			+fz(r(14px))
+			color: color-get($mau, xam-3)
+		.lead
+			+fw(400)
+			font-family: Montserrat
+			color: color-get($mau, cam-3)
+		p
+			+fz(r(15px))
+			margin-bottom: r(20.5px)
+		figcaption
+			+fz(r(14.8px))
+			color: color-get($mau, xam-3)
+		.number
+			color: color-get($mau, cam-3)
+	//- Right
+	.othernews
+		background: color-get($mau, xam-5)
+		h2
+			+fz(r(25px))
+			color: color-get($mau, cam-3)
+		figure
+			+pad(r(15.5px) r(15.5px) r(15.5px) r(22px)) 
+			border-top: 1px solid color-get($mau, xam-8)
+		.box-1
+			border-top: 1px solid color-get($mau, cam-3)
+		figcaption
+			+pad(0 0 0 r(22px))
+			h3
+				+fz(r(14px))
+				color: color-get($mau, den)
+				line-height: 1.3
+				&:active
+					color: color-get($mau, main)
+				+media-breakpoint-up(md)
+					&:hover
+						color: color-get($mau, main)

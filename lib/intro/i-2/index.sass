@@ -1,0 +1,84 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+article.analysis
+	+pad(2rem 0) 
+	+media-breakpoint-up(lg)
+		+pad(r(54px) 0 r(92px))
+	h2
+		+fz(r(30px))
+		text-align: center
+		text-transform: uppercase
+		color: color-get($mau, main)
+		margin-bottom: r(64.5px)
+	.box
+		margin-bottom: 2rem
+		+media-breakpoint-up(lg)
+			margin-bottom: 0px
+	figure
+		img
+			width: 100%
+			+media-breakpoint-up(lg)
+				width: 95%
+.canhcam-slider-1
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+			.item
+				min-height: 280px
+				+media-breakpoint-up(sm)
+					min-height: 320px
+				+media-breakpoint-up(md)
+					min-height: 340px
+		// Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					background: rgba(0,0,0,.3)
+					color: rgba(255,255,255,.3)
+					+bor-rad(50%)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+						color: color-get($mau,trang)
+			+media-breakpoint-up(md)
+				+opacity(0)
+				margin-top: 0
+				+transition(all .3s ease-in-out)
+				button
+					&.owl-prev, &.owl-next
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+					&.owl-prev
+						+pos(abs, 50% null null 1rem)
+					&.owl-next
+						+pos(abs, 50% 1rem null null)
+		// Dots
+		.owl-dots
+			+pos(abs, null null 0 0)
+			width: 100%
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						background: color-get($mau,main)
+	&:hover
+		+media-breakpoint-up(md)
+			.owl-carousel
+				.owl-nav
+					+opacity(1)
+
