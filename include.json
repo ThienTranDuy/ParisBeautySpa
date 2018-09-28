@@ -3,6 +3,14 @@
         "index": {
             "header": [
                 "header/h-14"
+			],
+            "body": [
+				"breadcrumb/b-1",
+				"/home/h-1",
+				"/home/h-2",
+				"/home/h-3",
+				"/home/h-4",
+				"/home/h-5"
             ],
             "footer": [
                 "footer/f-12"
@@ -13,7 +21,7 @@
                 "header/h-14"
 			],
             "body": [
-				"breadcrumb/b-2",
+				"breadcrumb/b-11",
                 "news/n-3"
             ],
             "footer": [
@@ -22,9 +30,10 @@
         },
 		"news-detail": {
             "header": [
-                "header/h-14"
+                "header/h-12"
 			],
             "body": [
+				"breadcrumb/b-12",
                 "news-detail/n-1"
             ],
             "footer": [
@@ -33,7 +42,7 @@
         },
 		"nav-tab": {
             "body": [
-                "nav-tab/n-1"
+             "nav-tab/n-1"
             ]
         },
 		"panigation": {
@@ -46,6 +55,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-3",
                 "beautify-service/s-1"
             ],
             "footer": [
@@ -57,6 +67,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-4",
                 "beautify-service-detail/s-1"
             ],
             "footer": [
@@ -68,6 +79,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-5",
                 "/hightech-rejuvenation/h-1"
             ],
             "footer": [
@@ -79,6 +91,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-6",
                 "/hightech-rejuvenation-detail/h-1"
             ],
             "footer": [
@@ -90,6 +103,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-7",
                 "/hightech-treatment/h-1"
             ],
             "footer": [
@@ -101,6 +115,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-8",
                 "/hightech-treatment-detail/h-1"
             ],
             "footer": [
@@ -112,6 +127,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-10",
                 "/contact/c-1"
             ],
             "footer": [
@@ -120,6 +136,7 @@
 		},
 		"promotion": {
             "header": [
+				"breadcrumb/b-9",
                 "header/h-14"
 			],
             "body": [
@@ -134,6 +151,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-2",
 				"/intro/i-1",
 				"/intro/i-2",
 				"/intro/i-3"
@@ -158,6 +176,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-1",
 				"/home/h-1",
 				"/home/h-2",
 				"/home/h-3",
