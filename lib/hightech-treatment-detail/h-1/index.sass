@@ -7,51 +7,62 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(r(70px) 0 r(65px))
-	//- left
 	.news-read
 		h1
 			+fz(r(25px))
+			text-transform: uppercase
 			color: color-get($mau, cam-3)
 		time
 			+fz(r(15px))
 		.card 
 			border: none
-			+mar(r(22px) 0)
+			+mar(r(14.5px) 0 r(22.5px))
 			.card-body
 				+fz(r(15px))
+				font-style: italic
+				+pad(0)
 		.lead
 			color: color-get($mau, cam-3)
-		.item-news-read
-			figure
-				margin-bottom: r(20px)
-				figcaption
-					+fz(r(14.8px))
-					margin-top: r(2px)
-					color: color-get($mau, xam-3)
 		p
 			+fz(r(15px))
-			margin-bottom: r(30px)
+			margin-bottom: r(20.5px)
+		.item-news-read
+			display: flex
+			text-align: center
+			align-items: center
+			justify-content: center
+			figure
+				+mar(r(7.5px) 0 r(20px) 0)
+				img
+					width: 100%
+				figcaption
+					+fz(r(14.8px))
+					font-style: italic
+					color: color-get($mau, xam-3)
+					margin-top: r(13px)
 		.social-networks
-			margin-top: r(10px)
-			padding-top: r(18px)
 			border-top: 1px solid color-get($mau, xam-6)
+			padding-top: r(18px)
+			margin-top: r(52px)
 			+media-breakpoint-down(lg)
 				margin-bottom: 2rem
-	//- Right
 	.othernews
 		h2
 			+fz(r(21.3px))
+			text-transform: uppercase
 			color: color-get($mau, cam-3)
-		figure
-			+mar(0)
-			+pad(r(17px) 0)
-			border-top: 2px solid color-get($mau, xam-7)
 		.box-1
 			border-top: 2px solid color-get($mau, cam-4)
+		figure
+			display: flex
+			border-top: 2px solid color-get($mau, xam-7)
+			+pad(r(17px) 0)
+			+mar(0)
 		figcaption
 			+pad(0 0 0 r(18px))
 			h3
 				+fz(r(15px))
+				text-transform: uppercase
 				color: color-get($mau, den)
 				&:active
 					color: color-get($mau, main)

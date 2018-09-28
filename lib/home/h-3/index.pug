@@ -1,0 +1,25 @@
+section.canhcam-home-3
+	.container
+		.row
+			.col-md-8.title
+				h2 Lợi ích của Paris beauty dem lại
+		.row
+			.col-sm-6.col-lg-4
+				a.item(href="javascript:void(0)")
+					figure
+						.box.active
+							.img
+								img(src="./img/parisbeautyspa/home/home_5.png", alt="alt")
+							figcaption.match
+								h3 Uy tín hàng đầu
+			-var i = 6
+				each val in ['Liệu trình riêng biệt', 'KTV chuyên nghiệp', 'Không gian sang trọng, ấm áp', 'Sản phẩm hỗ trợ điều trị', 'Thường xuyên nâng cấp công nghệ']
+					.col-sm-6.col-lg-4
+						a.item(href="javascript:void(0)")
+							figure
+								.box
+									.img 
+										img(src="./img/parisbeautyspa/home/home_"+i+".png", alt="alt")
+									figcaption.match
+										h3= val
+										- i++

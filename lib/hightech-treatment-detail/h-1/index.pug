@@ -7,16 +7,16 @@ section.canhcam-hightech-treatment-detail-news-details-1
 						h1 Triệt lông thượng bì bằng công nghệ Dios Laser
 						time 01/06/18 10:27 GMT+7
 						.card
-							.card-body.p-0.font-italic Làn da sạm, nhiều lông, đã từng khiến bạn tự ti về bản thân của mình. Giấc mơ được diện những bộ cánh thời thượng quyến rũ của bạn giờ đây sẽ thành hiện thực với công nghệ triệt lông vĩnh viễn Diode Laser.
+							.card-body Làn da sạm, nhiều lông, đã từng khiến bạn tự ti về bản thân của mình. Giấc mơ được diện những bộ cánh thời thượng quyến rũ của bạn giờ đây sẽ thành hiện thực với công nghệ triệt lông vĩnh viễn Diode Laser.
 						p.lead Triệt lông vĩnh viễn, hiệu quả ngay sau 4-6 lần điều trị
 						p Da ở vùng triệt trắng sáng, mịn màng, se khít lỗ chân lông
 						p Tự tin diện nhiều trang phục sexy, quyến rũ
 						p Nữ tính và hấp dẫn hơn trong mắt bạn khác giới
 						p Tạo được nhiều cơ hội thành công trong cuộc sống
-						a.item-news-read.d-flex.justify-content-center.align-items-center.text-center(href="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_1.png")
+						a.item-news-read(href="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_1.png")
 							figure
-								img.img-fluid(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_1.png", alt="Lorem ipsum dolor, sit amet consectetur adipisicing elit.")
-								figcaption.text-center.font-italic Triệt lông vĩnh viễn công nghệ Dios Laser
+								img(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_1.png", alt="Lorem ipsum dolor, sit amet consectetur adipisicing elit.")
+								figcaption Triệt lông vĩnh viễn công nghệ Dios Laser
 						p.lead Quy trình điều trị
 						p Bước 1: Bác sĩ thăm khám trực tiếp và tư vấn cụ thể cho khách hàng về công nghệ triệt lông Diode Laser và đưa ra liệu trình phù hợp
 						p Bước 2: Làm sạch vùng lông cần điều trị bằng cách cạo bớt lông để các bước sóng Laser được hấp thụ tối đa
@@ -34,20 +34,20 @@ section.canhcam-hightech-treatment-detail-news-details-1
 
 				.col-lg-4
 					.othernews(data-fix="50", data-fix-type="initial", data-fix-change="sticky")
-						h2.text-uppercase Dịch vụ khác
+						h2 Dịch vụ khác
 						.lists
 							-var i = 2
 							each val, index in ['trị nám xóa thâm với công nghệ cao laser', 'công nghệ giảm mở hifu', 'điều trị nám thượng bì công nghệ ipl']
 								a.item(href="javascript:void(0)")
 									if i == 2
-										figure.d-flex.box-1
+										figure.box-1
 											img(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_"+i+".png", alt="alt")
 											figcaption
-												h3.text-uppercase= val
+												h3= val
 												- i++
 									else
-										figure.d-flex
+										figure
 											img(src="./img/parisbeautyspa/hightech-treatment-detail/hightech_treatment_detail_"+i+".png", alt="alt")
 											figcaption
-												h3.text-uppercase= val
+												h3= val
 												- i++

@@ -13,6 +13,7 @@
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-2",
                 "news/n-3"
             ],
             "footer": [
@@ -46,6 +47,17 @@
 			],
             "body": [
                 "beautify-service/s-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+        },
+		"beautify-service-detail": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+                "beautify-service-detail/s-1"
             ],
             "footer": [
                 "footer/f-12"
@@ -116,7 +128,45 @@
             "footer": [
                 "footer/f-12"
             ]
+		},
+		"intro": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+				"/intro/i-1",
+				"/intro/i-2",
+				"/intro/i-3"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+		},
+		"form": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+				"/form/f-1"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
+		},
+		"home": {
+            "header": [
+                "header/h-14"
+			],
+            "body": [
+				"/home/h-1",
+				"/home/h-2",
+				"/home/h-3",
+				"/home/h-4",
+				"/home/h-5"
+            ],
+            "footer": [
+                "footer/f-12"
+            ]
 		}
-		
     }
 }

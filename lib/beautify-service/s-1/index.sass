@@ -3,19 +3,30 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-beautify-service-news-3
+.canhcam-bs-news
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
-		+pad(r(67px) 0)
+		+pad(4rem 0)
 	.news_list
 		h1
 			+fz(r(25.01px))
-			margin-bottom: r(25px)
+			text-align: center
+			text-transform: uppercase
 			color: color-get($mau, main)
-			+media-breakpoint-up(lg)
+			margin-bottom: r(25px)
 		.item
 			figure
 				margin-bottom: r(34px)
+				+transition(all .5s ease-in-out)
+				&:active
+					h3
+						color: color-get($mau, main)
+				+media-breakpoint-up(md)
+					&:hover
+						h3
+							color: color-get($mau, main)
+				img
+					width: 100%
 				figcaption
 					margin-top: r(19px)
 					time
@@ -23,9 +34,6 @@
 					h3
 						+fz(r(15px))
 						line-height: r(22px)
+						text-transform: uppercase
 						color: color-get($mau, den)
-						&:active
-							color: color-get($mau, main)
-						+media-breakpoint-up(md)
-							&:hover
-								color: color-get($mau, main)
+						+mar(.5rem 0 0 0)

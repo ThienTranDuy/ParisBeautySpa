@@ -1,0 +1,48 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-intro
+	article.intro
+		+pad(2rem 0)
+		+media-breakpoint-up(lg)
+			+pad(r(70px) 0 r(77px))
+	h1
+		+fz(r(30px))
+		text-align: center
+		text-transform: uppercase
+		color: color-get($mau, main)
+		margin-bottom: r(22.5px)
+	figure
+		img
+			width: 100%
+	p.lead
+		+fz(r(18px))
+		color: color-get($mau, main)
+	p
+		+fz(r(15px))
+		color: color-get($mau, den)
+	.item
+		margin-bottom: 2rem
+		+media-breakpoint-up(lg)
+			margin-bottom: 0px
+	figure
+		+mar(0 null)
+	.left
+		display: flex
+		align-items: center
+		figure
+			background: color-rgba(color-get($mau, trang), .8)
+			+transition(all .5s ease-in-out)
+			+media-breakpoint-up(lg)
+				transform: translateX(92px)
+			figcaption
+				+media-breakpoint-up(lg)
+					+pad(r(25.5px) r(40px) r(35px))
+					transform: translateX(-92px)
+					width: 125%
+
+
+
+ 

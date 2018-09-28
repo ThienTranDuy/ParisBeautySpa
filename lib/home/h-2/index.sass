@@ -1,0 +1,54 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-2
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(r(78px), 0, r(68px))
+	.title
+		margin: auto
+		margin-bottom: r(56.25px)
+		h2 
+			+fz(r(30px))
+			text-align: center
+			text-transform: uppercase
+			color: color-get($mau, main)
+		p
+			+fz(r(15px))
+			text-align: center
+	figure
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		margin-bottom: r(39.5px)
+		.box
+			.img
+				img
+					+bor-rad(50%)
+					border: 2px solid color-get($mau, main)
+					box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.21)
+			figcaption
+				margin-top: r(16.5px)
+				h3
+					+fz(r(18px))
+					color: color-get($mau, main)
+					+fw(100)
+					text-transform: uppercase
+					margin-top: r(20px)
+	p
+		+fz(r(15px))
+	.btn-home
+		margin: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		.btn-more
+			+bg-rad-1
+			+pad(r(16px) r(54px))
+			color: color-get($mau, trang)
+			text-transform: uppercase
+			+bor-rad(50px)

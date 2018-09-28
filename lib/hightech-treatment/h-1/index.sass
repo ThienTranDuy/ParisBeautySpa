@@ -10,22 +10,30 @@ section.canhcam-hightech-treatment-news-3
 	.news_list
 		h1
 			+fz(r(25.01px))
-			margin-bottom: r(40px)
+			text-align: center
+			text-transform: uppercase
 			color: color-get($mau, main)
-			+media-breakpoint-up(lg)
+			margin-bottom: r(34px)
 		.item
 			figure
 				margin-bottom: r(34px)
+				+transition(all .5s ease-in-out)
+				&:active
+					time, h3
+						color: color-get($mau, main)
+				+media-breakpoint-up(md)
+					&:hover
+						time, h3
+							color: color-get($mau, main)
+				img
+					width: 100%
 				figcaption
 					margin-top: r(19px)
-					time
-						color: color-get($mau, xam-3)
-					h3
-						+fz(r(15px))
-						line-height: r(22px)
-						color: color-get($mau, den)
-						&:active
-							color: color-get($mau, main)
-						+media-breakpoint-up(md)
-							&:hover
-								color: color-get($mau, main)
+				time
+					color: color-get($mau, xam-3)
+				h3
+					+fz(r(15px))
+					line-height: r(22px)
+					text-transform: uppercase
+					color: color-get($mau, den)
+					+mar(.5rem 0 0 0)

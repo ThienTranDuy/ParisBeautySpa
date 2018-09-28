@@ -1,10 +1,7 @@
 section.canhcam-hightech-rejuvenation-news-3
 	article.news_list
 		.container
-			//- Title
-			.row
-				.col-10.mx-auto
-					h1.h1.text-center.text-uppercase Trẻ hóa công nghệ cao
+			h1.h1 Trẻ hóa công nghệ cao
 			//- Content here
 			.row#products
 				-var i = 1
@@ -12,8 +9,8 @@ section.canhcam-hightech-rejuvenation-news-3
 					.col-sm-6.col-lg-4
 						a.item(href="javascript:void(0)")
 							figure
-								img.w-100.img-fluid(src="./img/parisbeautyspa/hightech-rejuvenation/hightech_rejuvenation_"+i+".png", alt="alt")
-								figcaption.text
+								img(src="./img/parisbeautyspa/hightech-rejuvenation/hightech_rejuvenation_"+i+".png", alt="alt")
+								figcaption
 									time 21.06.2018
-									h3.mb-0.mt-1.text-uppercase= val
+									h3= val
 									- i++

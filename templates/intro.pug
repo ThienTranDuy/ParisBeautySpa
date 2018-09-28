@@ -1,0 +1,16 @@
+extends _layout/layout.pug
+block variables
+	- var title = "intro"
+	- var description = "Description for intro page"
+	- var bodyclass = "intro"
+	- var href = "/intro.html"
+block header
+	//- include ../lib/header/h-14/index.pug
+block body
+	include ../lib/intro/i-1/index.pug
+	include ../lib/intro/i-2/index.pug
+	include ../lib/intro/i-3/index.pug
+	include ../lib/form/f-1/index.pug
+	//- include ../lib/intro/i-4/index.pug
+block footer
+	include ../lib/footer/f-12/index.pug
