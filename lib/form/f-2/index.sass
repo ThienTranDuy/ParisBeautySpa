@@ -8,14 +8,18 @@
 	+media-breakpoint-up(lg)
 		+pad(r(70px) 0 0 r(54px))
 	h1
+		text-align: center
 		+fz(r(30px))
-		text-transform: uppercase
 		color: color-get($mau, main)
-		margin-bottom: r(29.5px)
+		text-transform: uppercase
+		+mar(2rem 0 1rem)
+		+media-breakpoint-up(md)
+			text-align: left
+			+mar(0 0 r(29.5px))
 	.info
 		.inf
-			background: color-get($mau, xam-12)
 			+pad(r(23px) )
+			background: color-get($mau, xam-12)
 			h3
 				+fz(r(20px))
 				text-transform: uppercase

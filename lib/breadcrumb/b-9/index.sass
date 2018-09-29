@@ -6,22 +6,29 @@
 .canhcam-breadcrumb-promotion
 	position: relative
 	.promotion
-		+pos(abs,r(160px) null null 10%)
 		z-index: 300
+		+media-breakpoint-up(lg)
+			+pos(abs, null null r(147px) 10%)
 		h2
-			text-transform: uppercase
-			+fz(r(48px))
 			+fw(bold)
-			margin-bottom: r(37px)
 			+bg-rad-1
+			text-transform: uppercase
 			-webkit-text-fill-color: transparent
 			-webkit-background-clip: text
+			+media-breakpoint-up(sm)
+
+			+media-breakpoint-up(lg)
+				+fz(r(48px))
+				margin-bottom: r(37px)
 		.btn-promotion
 			color: color-get($mau, trang)
-			+fz(r(16px))
-			+pad(r(9px) r(20px))
 			+bg-rad-1
 			+bor-rad(50px)
+			+media-breakpoint-up(sm)
+
+			+media-breakpoint-up(lg)
+				+fz(r(16px))
+				+pad(r(9px) r(20px))
 	.support
 		position: fixed
 		top: 222px
