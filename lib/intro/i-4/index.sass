@@ -1,0 +1,108 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-intro-slider-5
+	padding: 2rem 0 4rem
+	h2
+		+fz(r(30px))
+		text-align: center
+		text-transform: uppercase
+		color: color-get($mau, main)
+		margin-bottom: r(44px)
+	.list-thumb
+		.slick-slide
+			position: relative
+			min-height: 400px
+			&:after
+				content: ""
+				display: block
+				width: 100%
+				height: 100%
+				background-image: url(../img/parisbeautyspa/intro/bg.png)
+				background-repeat: no-repeat
+				position: absolute
+				top: 0
+				right: -33%
+			+media-breakpoint-up(md)
+				min-height: 400px
+				display: flex
+				margin: 4rem 0
+				&.slick-current.slick-center
+					+transform(scale(1.3))
+					margin: 4rem 0
+					.zoom-item
+						display: block
+			.img
+				img
+					width: 100%
+					height: auto
+					+media-breakpoint-up(md)
+						height: 400px
+			.title
+				width: 100%
+				align-items: center
+				justify-content: start
+				background: color-get($mau, cam-9)
+				+pad(4rem 1rem 1rem)
+				+media-breakpoint-up(md)
+					width: 60%
+					height: 400px
+					+pad(r(70px) r(30px) r(93px) r(30px))
+				p
+					+fz(r(15px))
+					color: color-get($mau, trang)
+					text-align: center
+					margin-bottom: r(18.5px)
+					+media-breakpoint-up(md)
+						text-align: left
+				p.quote
+					+fz(r(80px))
+					line-height: 0
+					font-family: Montserrat
+					+media-breakpoint-down(md)
+						margin-bottom: .5rem !important
+			// .zoom-item
+			// 	color: color-get($mau,trang)
+			// 	+pos(abs, 50% null null 50%)
+			// 	+transform(translateX(-50%) translateY(-50%))
+			// 	z-index: 10
+			// 	+fz(4rem)
+			// 	+transition(all .2s ease-in-out)
+			// 	display: none
+	.slick-slider
+		.slick-list
+			text-align: center
+			.slick-slide
+				&:focus
+					outline: none
+				img
+					width: 100%
+					// display: inline-block
+		// .slick-arrow
+		// 	background: darken(color-get($mau,main) ,0%)
+		// 	color: darken(color-get($mau,trang) ,0%)
+		// 	padding: 1rem 1.1rem 
+		// 	width: initial
+		// 	height: initial
+		// 	z-index: 100
+		// 	&:before
+		// 		font-family: 'Font Awesome 5 Free'
+		// 		font-weight: 900
+		// 		color: darken(color-get($mau,trang) ,0%)
+		// 		font-size: .9rem 
+		// 	&.slick-prev
+		// 		left: 0
+		// 		&:before
+		// 			content: '\f053'
+		// 	&.slick-next
+		// 		right: 0
+		// 		&:before
+		// 			content: '\f054'
+		// 	&:hover 
+		// 		background: darken(color-get($mau,extra) ,0%)
+		// 		&:before
+		// 			color: darken(color-get($mau,main) ,0%)	
+	// &.canhcam-video-fixed-size.lg-outer
+	// 	padding: 0
