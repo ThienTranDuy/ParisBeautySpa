@@ -27,9 +27,11 @@
 		//- Left body
 		.box-footer
 			margin-bottom: r(32px)
+			text-align: center
+			+media-breakpoint-up(lg)
+				text-align: left
 			h4
 				+fz(r(18px))
-				margin-bottom: r(14px)
 				color: color-get($mau, nau-1)
 			p
 				margin-bottom: r(10px)
@@ -37,6 +39,11 @@
 					+fz(r(14px))
 					text-decoration: none
 					color: color-get($mau, den-2)
+			.mdi
+				width: r(16px)
+				margin-right: r(13px)
+				
+
 		//- Right body
 		.footer-logo
 			+pad(r(32px) null)
