@@ -17,7 +17,9 @@ article.video
 		img
 			width: 100%
 		figcaption
-			padding-top: r(19.25px)
+			padding-top: .5rem
+			+media-breakpoint-up(lg)
+				padding-top: r(19.25px)
 			time
 				+fz(r(13px))
 				color: color-get($mau, main)
