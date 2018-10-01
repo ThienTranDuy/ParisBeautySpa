@@ -7,52 +7,72 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(r(78px), 0, r(68px))
-	.title
-		margin: auto
-		margin-bottom: r(56.25px)
-		h2 
-			+fz(r(30px))
+	.container
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: calc(100% + 2rem)
+			right: 0
+			bottom: 0
+			left: 50%
+			-webkit-transform: translateX(-50%)
+			transform: translateX(-50%)
+			width: 20rem
+			height: 1px
+			border-radius: 50%
+			background: -webkit-radial-gradient(#c9952f 1%, #ffffff 98%)
+			background: radial-gradient(#c9952f 1%, #ffffff 98%)
+			+media-breakpoint-up(md)
+				width: 100%
+			+media-breakpoint-up(lg)
+				top: calc(100% + 4rem)
+		.title
+			margin: auto
+			margin-bottom: r(56.25px)
+			h2 
+				+fz(r(30px))
+				text-align: center
+				text-transform: uppercase
+				color: color-get($mau, main)
+			p
+				+fz(r(15px))
+				text-align: center
+		figure
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 			text-align: center
-			text-transform: uppercase
-			color: color-get($mau, main)
+			margin-bottom: r(39.5px)
+			.img
+				border: 20px solid rgba(0, 0, 0, 0)
+				border-image: url("../img/parisbeautyspa/home/home-border-image.png") 25 25 round
+				-webkit-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
+				-o-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
+				+bor-rad(50%)
+				img
+					border: 2px solid color-get($mau, main)
+					+bor-rad(50%)
+			figcaption
+				margin-top: r(16.5px)
+				h3
+					+fz(r(18px))
+					color: color-get($mau, main)
+					+fw(100)
+					text-transform: uppercase
+					margin-top: r(20px)
 		p
 			+fz(r(15px))
+		.btn-home
+			margin: auto
+			display: flex
+			justify-content: center
+			align-items: center
 			text-align: center
-	figure
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
-		text-align: center
-		margin-bottom: r(39.5px)
-		.img
-			border: 20px solid rgba(0, 0, 0, 0)
-			border-image: url("../img/parisbeautyspa/home/home-border-image.png") 25 25 round
-			-webkit-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
-			-o-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
-			+bor-rad(50%)
-			img
-				border: 2px solid color-get($mau, main)
-				+bor-rad(50%)
-		figcaption
-			margin-top: r(16.5px)
-			h3
-				+fz(r(18px))
-				color: color-get($mau, main)
-				+fw(100)
+			.btn-more
+				+bg-rad-1
+				+pad(r(16px) r(54px))
+				color: color-get($mau, trang)
 				text-transform: uppercase
-				margin-top: r(20px)
-	p
-		+fz(r(15px))
-	.btn-home
-		margin: auto
-		display: flex
-		justify-content: center
-		align-items: center
-		text-align: center
-		.btn-more
-			+bg-rad-1
-			+pad(r(16px) r(54px))
-			color: color-get($mau, trang)
-			text-transform: uppercase
-			+bor-rad(50px)
+				+bor-rad(50px)
