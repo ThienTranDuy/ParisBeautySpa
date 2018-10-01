@@ -3,10 +3,10 @@
 // CODE
 //////////////////////////////////////
 .canhcam-breadcrumb-promotion .owl-carousel .owl-stage-outer .item
-	min-height: 380px !important
-	background-position: center center
-	+media-breakpoint-up(lg)
-		background-position: center -70px !important
+	// background-position: center -30px !important
+// 	min-height: 460px !important
+// 	background-position: center center
+// 	+media-breakpoint-up(lg)
 .canhcam-breadcrumb-promotion
 	position: relative
 	.promotion
@@ -38,20 +38,21 @@
 		+fz(20px)
 		display: flex
 		flex-direction: column
+		z-index: 999
 		.items
 			margin-bottom: r(15px)
 			width: r(35px)
 			height: r(35px)
 			+bor-rad(50%)
 			color: color-get($mau, trang)
-			background: color-get($mau, cam-8)
+			+bg-rad-2
 			display: flex
 			justify-content: center
 			align-items: center
 			text-align: center
 			opacity: .9
 			box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3)
-			background-position: 0 -100px !important
+			background-repeat: no-repeat !important
 			background-repeat: no-repeat
 	.main-breadcrumb
 		background: color-get($mau,xam-10)

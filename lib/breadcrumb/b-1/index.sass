@@ -5,15 +5,15 @@
 .canhcam-breadcrumb-index-1 .owl-carousel .owl-stage-outer .item
 	background-repeat: no-repeat !important
 	+media-breakpoint-up(lg)
-		min-height: 505px !important
-		background-position: center -70px !important
+		min-height: 550px !important
+		background-position: center -30px !important
 .canhcam-breadcrumb-index-1
 	position: relative
 	.support
 		position: fixed
 		top: 222px
 		right: 5%
-		z-index: 300
+		z-index: 999
 		+fz(20px)
 		display: flex
 		flex-direction: column
@@ -23,7 +23,7 @@
 			height: r(35px)
 			+bor-rad(50%)
 			color: color-get($mau, trang)
-			background: color-get($mau, cam-8)
+			+bg-rad-2
 			display: flex
 			justify-content: center
 			align-items: center
