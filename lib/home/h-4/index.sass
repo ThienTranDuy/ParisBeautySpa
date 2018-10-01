@@ -51,22 +51,58 @@
 						background: color-get($mau,main)
 	.news-list
 		.item
-			height: r(300px)
-			background: color-get($mau, trang)
 			.box-img
-				height: r(300px)
-				position: relative
-				&:after
-					+pos(abs, 0 null null 100%)
-					display: block
-					content: ""
-					width: 100%
-					height: 100%
-					background-image: url("../img/parisbeautyspa/home/home-border-trans.png")
-					background-repeat: no-repeat
-					transform: translateX(-50%)
+				display: flex
+				justify-content: center
+				img
+					+bor-rad(50%)
+					width: 15rem
+					height: 15rem
 			.box-content
-				+pad(3rem 3rem 0 1.5rem)
+				+pad(2rem 0)
+				text-align: center
 				color: color-get($mau, den-1)
+				position: relative
+				.full-content
+					display: -webkit-box
+					-webkit-line-clamp: 10
+					-webkit-box-orient: vertical
+					overflow: hidden
 				.name
 					color: color-get($mau, main)
+				&:before
+					text-align: left
+					display: block
+					content: '“'
+					+pos(abs, -2.5rem null null 0)
+					width: 100%
+					height: 100%
+					color: color-get($mau, xam-3)
+					+fz(r(120px))
+					font-family: 'Montserrat', sans-serif
+					color: rgba(153, 153, 153, 0.2)
+					+fw(900)
+		+media-breakpoint-up(lg)
+			.item
+				height: r(300px)
+				background: color-get($mau, trang)
+				.box-img
+					height: r(300px)
+					position: relative
+					img
+						display: none
+					&:after
+						+pos(abs, 0 null null 100%)
+						display: block
+						content: ""
+						width: 100%
+						height: 100%
+						background-image: url("../img/parisbeautyspa/home/home-border-trans.png")
+						background-repeat: no-repeat
+						transform: translateX(-50%)
+				.box-content
+					text-align: left
+					+pad(3rem 3rem 0 1.5rem)
+					&:before
+						+pos(abs, -2rem null null 0)
+						+pad(0 1.5rem)

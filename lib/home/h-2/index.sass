@@ -25,24 +25,23 @@
 		align-items: center
 		text-align: center
 		margin-bottom: r(39.5px)
-		.box
-			.img
-				border: 20px solid rgba(0, 0, 0, 0)
-				border-image: url("../img/parisbeautyspa/home/home-border-image.png") 25 25 round
-				-webkit-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
-				-o-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
+		.img
+			border: 20px solid rgba(0, 0, 0, 0)
+			border-image: url("../img/parisbeautyspa/home/home-border-image.png") 25 25 round
+			-webkit-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
+			-o-border-image: url(../img/parisbeautyspa/home/home-border-image.png) 25 25 round
+			+bor-rad(50%)
+			img
+				border: 2px solid color-get($mau, main)
 				+bor-rad(50%)
-				img
-					border: 2px solid color-get($mau, main)
-					+bor-rad(50%)
-			figcaption
-				margin-top: r(16.5px)
-				h3
-					+fz(r(18px))
-					color: color-get($mau, main)
-					+fw(100)
-					text-transform: uppercase
-					margin-top: r(20px)
+		figcaption
+			margin-top: r(16.5px)
+			h3
+				+fz(r(18px))
+				color: color-get($mau, main)
+				+fw(100)
+				text-transform: uppercase
+				margin-top: r(20px)
 	p
 		+fz(r(15px))
 	.btn-home
