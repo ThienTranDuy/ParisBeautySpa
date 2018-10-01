@@ -2,34 +2,14 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
-.canhcam-breadcrumb-promotion .owl-carousel .owl-stage-outer .item
-	min-height: 380px !important
-	background-position: center center
+.canhcam-breadcrumb-1 .owl-carousel .owl-stage-outer .item
+	background-repeat: no-repeat !important
+	background-position: center center !important
 	+media-breakpoint-up(lg)
+		min-height: 380px !important
 		background-position: center -70px !important
-.canhcam-breadcrumb-promotion
+.canhcam-breadcrumb-1
 	position: relative
-	.promotion
-		z-index: 300
-		+pos(abs, null null r(147px) 10%)
-		h2
-			+fw(bold)
-			+bg-rad-1
-			text-transform: uppercase
-			-webkit-text-fill-color: transparent
-			-webkit-background-clip: text
-			+media-breakpoint-up(lg)
-				+fz(r(48px))
-				margin-bottom: r(37px)
-		.btn-promotion
-			color: color-get($mau, trang)
-			+bg-rad-1
-			+bor-rad(50px)
-			+media-breakpoint-up(sm)
-
-			+media-breakpoint-up(lg)
-				+fz(r(16px))
-				+pad(r(9px) r(20px))
 	.support
 		position: fixed
 		top: 222px
@@ -51,8 +31,8 @@
 			text-align: center
 			opacity: .9
 			box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3)
-			background-position: 0 -100px !important
-			background-repeat: no-repeat
+			background-repeat: no-repeat !important
+			// min-height: 380px !important
 	.main-breadcrumb
 		background: color-get($mau,xam-10)
 		position: absolute
