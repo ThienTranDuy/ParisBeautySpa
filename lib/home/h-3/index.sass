@@ -9,27 +9,35 @@
 		+pad(r(78px), 0, r(68px))
 	.title
 		margin: auto
-		margin-bottom: r(56.25px)
+		margin-bottom: 2rem
+		+media-breakpoint-up(lg)
+			margin-bottom: r(46px)
 		h2 
 			+fz(r(30px))
 			text-align: center
 			text-transform: uppercase
 			color: color-get($mau, main)
-			margin-bottom: r(22.5px)
+			margin-bottom: 0
+			+media-breakpoint-up(lg)
+				margin-bottom: r(22.5px)
 		p
 			+fz(r(15px))
 			text-align: center
+			margin-bottom: 0
 	figure
 		display: flex
 		justify-content: center
 		align-items: center
 		text-align: center
-		margin-bottom: r(39.5px)
+		margin-bottom: 2rem
+		+media-breakpoint-up(lg)
+			margin-bottom: r(45px)
 		.box
 			.img
 				img
 					filter: grayscale(100%)
 					+pad(r(30px))
+					// +transition(all .5s ease-in-out)
 			figcaption
 				margin-top: r(20.5px)
 				h3
@@ -37,7 +45,7 @@
 					color: color-get($mau, den)
 					+fw(100)
 					margin-top: r(20px)
-		.active, &:hover
+		.active, &:active
 			.img
 				img
 					+bor-rad(50%)
@@ -45,13 +53,15 @@
 					filter: grayscale(0)
 			h3
 				color: color-get($mau, main)
-		// +media-breakpoint-up(md)
-		// 	&:hover
-		// 		.img
-		// 			img
-		// 				+bor-rad(50%)
-		// 				box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.21)
-		// 				border: 2px solid color-get($mau, main)
+		+media-breakpoint-up(lg)
+			&:hover
+				.img
+					img
+						+bor-rad(50%)
+						box-shadow: 0 0 0 2px color-get($mau, main) inset
+						filter: grayscale(0)
+				h3
+					color: color-get($mau, main)
 	p
 		+fz(r(15px))
 	.btn-home

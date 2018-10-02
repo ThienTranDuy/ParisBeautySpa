@@ -29,22 +29,26 @@
 				top: calc(100% + 4rem)
 		.title
 			margin: auto
-			margin-bottom: r(56.25px)
+			margin-bottom: r(60px)
 			h2 
 				+fz(r(30px))
 				text-align: center
 				text-transform: uppercase
 				color: color-get($mau, main)
+				margin-bottom: 1rem
 			p
 				+fz(r(15px))
 				text-align: center
+				margin-bottom: 0
 		figure
 			display: flex
 			flex-direction: column
 			justify-content: center
 			align-items: center
 			text-align: center
-			margin-bottom: r(39.5px)
+			margin-bottom: 2rem
+			+media-breakpoint-up(lg)
+				margin-bottom: r(45px)
 			.img
 				border: 20px solid rgba(0, 0, 0, 0)
 				border-image: url("../img/parisbeautyspa/home/home-border-image.png") 25 25 round
@@ -55,13 +59,12 @@
 					border: 2px solid color-get($mau, main)
 					+bor-rad(50%)
 			figcaption
-				margin-top: r(16.5px)
+				margin-top: r(23px)
 				h3
 					+fz(r(18px))
-					color: color-get($mau, main)
+					color: color-get($mau, den)
 					+fw(100)
 					text-transform: uppercase
-					margin-top: r(20px)
 		p
 			+fz(r(15px))
 		.btn-home
@@ -72,7 +75,9 @@
 			text-align: center
 			.btn-more
 				+bg-rad-1
-				+pad(r(16px) r(54px))
+				width: r(180px)
+				height: r(50px)
+				line-height: r(50px)
 				color: color-get($mau, trang)
 				text-transform: uppercase
 				+bor-rad(50px)
