@@ -88,10 +88,11 @@
 	.k-menu-bar
 		color: color-get($mau,main)
 		.k-button-toggle
+			+fz(2.25rem)
 			color: color-get($mau,main)
 		.navbar-brand
 			img
-				max-height: 2rem
+				max-height: 3rem
 		.nav
 			.nav-item
 				.nav-link
@@ -114,11 +115,17 @@
 							list-style-type: disc
 						.h2
 							+fz(11px)
+							&:hover, &.active, &.show
+								color: color-get($mau, main)
 						.dropdown-item
 							+fz(11px)
 							+pad(.25rem 0)
 							color: #666666
 							white-space: initial
+							&.active, &.show
+								color: color-get($mau, main)
+						.dropdown-divider
+							display: none
 				.nav-link
 					color: lighten(color-get($mau,den),30%)
 					border-bottom: 1px solid
@@ -127,7 +134,7 @@
 						+mar(0)
 				&:hover, &.active, &.show
 					.nav-link
-						color: color-get($mau,den)
+						color: color-get($mau,main)
 		.k-menu-bar
 			.k-button-toggle
 				color: color-get($mau,den)
@@ -136,7 +143,8 @@
 
 	+media-breakpoint-up(lg)
 		.topbar
-			background-image: linear-gradient(to right, color-get($mau,main), color-get($mau,front), color-get($mau,main))
+			// background-image: linear-gradient(to right, color-get($mau,main), color-get($mau,front), color-get($mau,main))
+			+bg-rad-1
 			justify-content: flex-end
 			display: flex
 			height: 38px
@@ -182,27 +190,29 @@
 							+lh(1.5)
 					&:hover, &.active, &.show
 						.nav-link
-							color: color-get($mau,extra)
-					.dropdown-menu
-						+pad(19px 23px)
-						.h2
-							+fz(11px)
-							text-decoration: none
-							color: color-get($mau,den)
-						ul
-							padding-inline-start: 15px
-							li
-								list-style-type: disc
-								color: #666666
-						.dropdown-divider
-							+mar(19px 0)
-						.dropdown-item
-							white-space: initial
-							color: lighten(color-get($mau,den),40%)
-							+pad(.25rem 0rem)
-							+fz(11px)
-							&:active 
-								color: color-get($mau,trang)
+							color: color-get($mau,main)
+					+ .dropdown
+						.dropdown-menu
+							+pad(19px 23px)
+							.h2
+								+fz(11px)
+								text-decoration: none
+								color: color-get($mau,den)
+							ul
+								padding-inline-start: 15px
+								li
+									list-style-type: disc
+									color: #666666
+							.dropdown-divider
+								display: block
+								+mar(19px 0)
+							.dropdown-item
+								white-space: initial
+								color: lighten(color-get($mau,den),40%)
+								+pad(.25rem 0rem)
+								+fz(11px)
+								&:active 
+									color: color-get($mau,trang)
 			.mainnav
 				display: flex
 				flex-direction: column

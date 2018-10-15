@@ -12,10 +12,13 @@ article.analysis
 		text-align: center
 		text-transform: uppercase
 		color: color-get($mau, main)
-		margin-bottom: r(64.5px)
-	.box
+		margin-bottom: 1rem
+		+media-breakpoint-up(lg)
+			margin-bottom: r(64.5px)
+	.box-1
 		margin-bottom: 2rem
 		+media-breakpoint-up(lg)
+			padding-right: 4%
 			margin-bottom: 0px
 	figure
 		img

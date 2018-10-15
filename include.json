@@ -127,8 +127,9 @@
                 "header/h-14"
 			],
             "body": [
-				"breadcrumb/b-10",
-                "/contact/c-1"
+				"breadcrumb/b-1",
+				"/form/f-2",
+				"/contact/c-1"
             ],
             "footer": [
                 "footer/f-12"
@@ -136,10 +137,10 @@
 		},
 		"promotion": {
             "header": [
-				"breadcrumb/b-9",
                 "header/h-14"
 			],
             "body": [
+				"breadcrumb/b-9",
                 "/promotion/p-1"
             ],
             "footer": [
@@ -154,7 +155,8 @@
 				"breadcrumb/b-2",
 				"/intro/i-1",
 				"/intro/i-2",
-				"/intro/i-3"
+				"/intro/i-3",
+				"/intro/i-4"
             ],
             "footer": [
                 "footer/f-12"
@@ -165,7 +167,8 @@
                 "header/h-14"
 			],
             "body": [
-				"/form/f-1"
+				"/form/f-1",
+				"/form/f-2"
             ],
             "footer": [
                 "footer/f-12"

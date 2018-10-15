@@ -7,23 +7,56 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem, 0)
-	h2 
-		+fz(r(30px))
-		text-align: center
-		text-transform: uppercase
-		color: color-get($mau, main)
-		margin-bottom: r(22.5px)
-	figure
-		img
-			width: 100%
-	h3
-		+fz(r(16px))
-		+fw(bold)
-		text-transform: uppercase
-	p
-		+fz(r(15px))
-	.box-content
-		background: url('../img/parisbeautyspa/background/home_bg_1.png') no-repeat
-		display: flex
-		justify-content: center
-		align-items: center
+	.container
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: calc(100% + 2rem)
+			right: 0
+			bottom: 0
+			left: 50%
+			-webkit-transform: translateX(-50%)
+			transform: translateX(-50%)
+			width: 20rem
+			height: 1px
+			border-radius: 50%
+			background: -webkit-radial-gradient(#c9952f 1%, #ffffff 98%)
+			background: radial-gradient(#c9952f 1%, #ffffff 98%)
+			+media-breakpoint-up(md)
+				width: 100%
+			+media-breakpoint-up(lg)
+				top: calc(100% + 4rem)
+		h2 
+			+fz(r(30px))
+			text-align: center
+			text-transform: uppercase
+			color: color-get($mau, main)
+			margin-bottom: r(22.5px)
+		figure
+			img
+				width: 100%
+
+		h3
+			+fz(r(16px))
+			+fw(bold)
+			text-transform: uppercase
+		p
+			+fz(r(15px))
+		.box-content
+			background: url('../img/parisbeautyspa/background/home_bg_1.png') 
+			background-repeat: no-repeat
+			display: flex
+			justify-content: center
+			align-items: center
+		// .nhon
+		// 	.Rectangle_26 {
+		// 		background-image: -moz-linear-gradient( 0deg, rgb(201,149,47) 0%, rgb(234,196,65) 49%, rgb(201,149,47) 100%);
+		// 		background-image: -webkit-linear-gradient( 0deg, rgb(201,149,47) 0%, rgb(234,196,65) 49%, rgb(201,149,47) 100%);
+		// 		background-image: -ms-linear-gradient( 0deg, rgb(201,149,47) 0%, rgb(234,196,65) 49%, rgb(201,149,47) 100%);
+		// 		position: absolute;
+		// 		left: 245px;
+		// 		top: 2276px;
+		// 		width: 1110px;
+		// 		height: 1px;
+		// 		z-index: 211;

@@ -1,0 +1,96 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-intro-slider-5
+	padding: 2rem 0 4rem
+	+media-breakpoint-up(lg)
+		padding: 2rem 0 4rem
+	h2
+		+fz(r(30px))
+		text-align: center
+		text-transform: uppercase
+		color: color-get($mau, main)
+		margin-bottom: 2rem
+		+media-breakpoint-up(lg)
+			margin-bottom: r(44px)
+	.list-thumb
+		.slick-current.slick-active.slick-center
+			z-index: 99
+			position: inherit
+			flex-direction: row
+			background-color: none
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15)
+			.img, .title, &:after
+				opacity: 1
+		.slick-slide
+			outline: none
+			position: relative
+			min-height: 325
+			flex-direction: row-reverse
+			background-color: rgb(49, 49, 48)
+			box-shadow: none
+			+transition(all .3s ease-in-out)
+			&:after
+				display: none
+			+media-breakpoint-up(lg)
+				min-height: 325
+				display: flex
+				margin: 4rem 0
+				&:after
+					opacity: .3
+					content: ""
+					display: block
+					width: 100%
+					height: 100%
+					background-image: url(../img/parisbeautyspa/intro/bg.png)
+					background-repeat: no-repeat
+					position: absolute
+					top: 0
+					right: -33.1%
+				&.slick-current.slick-center
+					+transform(scale(1.3))
+					margin: 4rem 0
+					.zoom-item
+						display: block
+			.img
+				opacity: .3
+				img
+					filter: alpha(opacity=50)
+					width: 100%
+					height: auto
+					+media-breakpoint-up(lg)
+						height: 325px
+			.title
+				opacity: .3
+				width: 100%
+				align-items: center
+				justify-content: start
+				text-align: center
+				background: color-get($mau, cam-9)
+				+pad(4rem 1rem 1rem 1rem)
+				+media-breakpoint-up(lg)
+					width: 60%
+					height: 325
+					+pad(0 2rem 0 2rem)
+					text-align: left
+				p.content
+					+fz(.9rem)
+					color: color-get($mau, trang)
+				p.quote
+					font-style: italic !important 
+					color: color-get($mau, xam-13)
+					+fz(r(80px))
+					+fw(bold)
+					line-height: 0
+					font-family: Montserrat
+					padding-top: 0
+					text-align: left
+					+media-breakpoint-up(lg)
+						padding-top: 85px
+						margin-bottom: .5rem !important
+				p.lead
+					color: color-get($mau, trang)
+					+fz(1.2rem)
+					text-transform: uppercase

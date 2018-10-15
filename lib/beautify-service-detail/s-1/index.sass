@@ -7,71 +7,82 @@
 	+pad(3rem 0)
 	h1
 		+fz(r(30px))
-		text-transform: uppercase
 		color: color-get($mau, cam-3)
+		text-transform: uppercase
 		margin-bottom: 1rem
 	.intro
 		p
 			+fz(r(18px))
 			color: color-get($mau, xam-3)
 	.timeline
+		width: 100%
 		list-style: none
 		line-height: 1.4em
-		width: 100%
-		margin: 0
-		padding: 2rem
+		margin-top: 2rem
+		+media-breakpoint-up(lg)v
+			padding: 2rem
+			margin-top: 0
 		.timeline-item
-			padding-left: r(80px)
+			padding: 0 1.5rem
 			position: relative
+			+media-breakpoint-up(lg)
+				padding-left: r(80px)
+			&:before
+				z-index: 13
+				+fw(600)
+				width: 66px
+				height: 66px
+				text-align: center
+				line-height: 66px
+				border-radius: 100%
+				color: color-get($mau, trang)
+				background: url('../img/parisbeautyspa/beautify-service-detail/bg.png')
+				background-position: center center				
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				left: -2.5rem
+				top: r(-25px)
+				+media-breakpoint-up(lg)
+					left: r(-13px)
+			&:nth-child(1)
+				&:before
+					content: "1"
+			&:nth-child(2)
+				&:before
+					content: "2"
+			&:nth-child(3)
+				&:before
+					content: "3"
+			&:nth-child(4)
+				&:before
+					content: "4"
+			&:after
+				content: ""
+				width: 1px
+				background: color-get($mau, cam-5)
+				display: block
+				position: absolute
+				bottom: 0
+				left: -.2rem
+				top: 24px
+				+media-breakpoint-up(lg)
+					left: r(21px)
 			.timeline-info 
 				+fz(r(20px))
+				text-align: center
 				color: color-get($mau, cam-3)
-				margin-bottom: r(30px)
-			.timeline-marker
-				position: absolute
-				top: 0
-				bottom: 0
-				left: 0
-				width: 15px
-				&:before
-					background: url('../img/parisbeautyspa/beautify-service-detail/bg.png')
-					background-position: center
-					border: 3px solid transparent
-					border-radius: 100%
-					color: color-get($mau, trang)
-					display: flex
-					justify-content: center
-					align-items: center
-					text-align: center
-					position: absolute
-					height: r(66px)
-					z-index: 13
-					top: r(-25px)
-					left: r(-13px)
-					width: r(66px)
-					transition: background 0.3s ease-in-out, border 0.3s ease-in-out
-					+fw(600)
-				&:nth-child(1)
-					&:before
-						content: "1"
-				&:nth-child(2)
-					&:before
-						content: "2"
-				&:nth-child(3)
-					&:before
-						content: "3"
-				&:nth-child(4)
-					&:before
-						content: "4"
-				&:after
-					content: ""
-					width: 1px
-					background: color-get($mau, cam-5)
-					display: block
-					position: absolute
-					top: 24px
-					bottom: 0
-					left: 21px
+				margin-bottom: 1.5rem
+				+media-breakpoint-up(lg)
+					margin-bottom: r(30px)
+					text-align: left
+			// .timeline-marker
+			// 	width: 15px
+			// 	position: absolute
+			// 	top: 0
+			// 	left: 0
+			// 	bottom: 0
 			.timeline-content
 				padding-bottom: 2rem
 				figure
@@ -79,25 +90,50 @@
 					img
 						width: 100%
 					figcaption
-						display: flex
-						+pad(r(25.5px) r(31.5px) r(14.5px) r(16.5px))
 						color: color-get($mau, den)
+						display: flex
+						justify-content: center
+						+pad(1rem)
+						+media-breakpoint-up(lg)
+							+pad(r(25.5px) r(31.5px) r(14.5px) r(16.5px))
 						.orderlist
 							+fw(600)
 							padding-right: 8px
+				//- image in box
 				figure.box
 					margin-top: 20px !important
 					box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15)
 				.lead
 					+mar(r(17px) 0)
+					// text-align: center
 					text-transform: uppercase
 					color: color-get($mau, xam-3)
+					+media-breakpoint-up(lg)
+						text-align: left
 				p
 					+fz(r(15px))
 				.timeline-title
 					+fz(1.5rem)
+				//- image in circle
 				.box-circle
+					.mot
+						transform: translateX(0)
+						+media-breakpoint-up(lg)
+							transform: translateX(-24%)
+							z-index: 4
+					.hai
+						transform: translateX(0)
+						+media-breakpoint-up(lg)
+							transform: translateX(-19%)
+							z-index: 4
+					.ba
+						transform: translateX(0)
+						+media-breakpoint-up(lg)
+							transform: translateX(-10%)
+							z-index: 4
+					.bon
 					position: relative
+					margin-top: 1rem
 					+media-breakpoint-up(lg)
 						&:before
 							content: ""
@@ -121,10 +157,15 @@
 								border-radius: 50%
 								padding: 24px
 						figcaption
+							padding: 1rem 0 !important
 							flex-direction: column
 							text-align: center
 							.orderlist
 								+pad(0)
+								margin-bottom: .3rem
+		.phase-4
+			p
+				margin-bottom: .7rem
 	.social-networks
 		border-top: 1px solid color-get($mau, xam-6)
 		padding-top: r(20px)

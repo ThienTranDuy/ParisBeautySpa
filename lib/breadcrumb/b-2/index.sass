@@ -2,7 +2,11 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
-
+// .canhcam-breadcrumb-1 .owl-carousel .owl-stage-outer .item
+// 	min-height: 460px !important
+// 	background-position: center center
+// 	+media-breakpoint-up(lg)
+// 		background-position: center -35px !important
 .canhcam-breadcrumb-1
 	position: relative
 	.support
@@ -13,20 +17,22 @@
 		+fz(20px)
 		display: flex
 		flex-direction: column
+		z-index: 999
 		.items
 			margin-bottom: r(15px)
 			width: r(35px)
 			height: r(35px)
 			+bor-rad(50%)
 			color: color-get($mau, trang)
-			background: color-get($mau, cam-8)
+			+bg-rad-2
 			display: flex
 			justify-content: center
 			align-items: center
 			text-align: center
-			border: 4px solid
-			box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.3)
 			opacity: .9
+			box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3)
+			background-repeat: no-repeat !important
+			// min-height: 380px !important
 	.main-breadcrumb
 		background: color-get($mau,xam-10)
 		position: absolute
