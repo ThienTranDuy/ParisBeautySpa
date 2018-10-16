@@ -13,7 +13,7 @@
 			color: color-get($mau, cam-3)
 		time
 			+fz(r(15px))
-		.card 
+		.card
 			border: none
 			+mar(r(14.5px) 0)
 			.card-body
@@ -61,14 +61,25 @@
 			border-top: 2px solid color-get($mau, xam-7)
 			+pad(r(17px) 0)
 			+mar(0)
-		figcaption
-			+pad(0 0 0 r(18px))
-			h3
-				+fz(r(15px))
-				text-transform: uppercase
-				color: color-get($mau, den)
-				&:active
-					color: color-get($mau, main)
-				+media-breakpoint-up(md)
-					&:hover
+			img
+				+media-breakpoint-up(lg)
+					width: 140px
+					height: 80px
+			figcaption
+				+pad(0 0 0 r(18px))
+				h3
+					+fz(r(15px))
+					text-transform: uppercase
+					color: color-get($mau, den)
+					&:active
 						color: color-get($mau, main)
+					+media-breakpoint-up(md)
+						&:hover
+							color: color-get($mau, main)
+			+media-breakpoint-down(md)
+				flex-wrap: wrap
+				img
+					width: 100%
+				figcaption
+					padding-top: 1rem
+					padding-left: 0

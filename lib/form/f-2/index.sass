@@ -6,16 +6,18 @@
 .canhcam-form-1
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
-		+pad(r(70px) 0 0 r(54px))
+		+pad(4rem null 3rem null)
 	h1
 		text-align: center
 		+fz(r(30px))
 		color: color-get($mau, main)
 		text-transform: uppercase
-		+mar(2rem 0 1rem)
 		+media-breakpoint-up(md)
 			text-align: left
 			+mar(0 0 r(29.5px))
+	.Module-173
+		.ModuleContent
+			height: 100%
 	.info
 		.inf
 			+pad(r(23px) )
@@ -23,6 +25,9 @@
 			h3
 				+fz(r(20px))
 				text-transform: uppercase
+			em
+				color: color-get($mau,main)
+				margin-right: 1rem
 			+media-breakpoint-down(md)
 				margin-bottom: 2rem
 		p
@@ -47,4 +52,3 @@
 			+bor-rad(30px)
 			border: none
 			margin-top: r(11px)
- 
