@@ -1,9 +1,14 @@
 @import ../_includes
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
 // +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
-
+@font-face
+	font-family: "UTMAvo"
+	src: url("../fonts/utm-avo.eot")
+	src: url("../fonts/utm-avo.eot?#iefix") format("embedded-opentype"), url("../fonts/utm-avo.otf") format("opentype"), url("../fonts/utm-avo.svg") format("svg"), url("../fonts/utm-avo.ttf") format("truetype"), url("../fonts/utm-avo.woff") format("woff"), url("../fonts/utm-avo.woff2") format("woff2")
+	font-weight: normal
+	font-style: normal
 html, body
-	font-family: 'UTM avo', sans-serif
+	font-family: 'UTMAvo', sans-serif
 	font-size: 14px
 	font-weight: 500
 	height: 100%
@@ -213,90 +218,94 @@ header
 					+pos(abs, -20px 1.2rem null initial)
 				&:after
 					+pos(abs, -19px 1.2rem null initial)
-.wrap-form
-	position: relative
-	h1
-		width: 100%
-		padding-left: 15px
-		margin-top: 0
-	> div
-		display: flex
-		flex-wrap: wrap
-		.form-group
-			width: 100%
-			input , textarea
-				display: block
-				width: 100%
-				font-size: 1rem
-				line-height: 1.5
-				color: #495057
-				border-radius: 0.25rem
-				-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-				transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-				transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
-				transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-				+pad(.9rem .9rem)
-				background: color-get($mau, trang)
-				border: 1px solid #e5e5e5
-				+placeholder
-					color: #a7a7a7
-			&.qparagraph
-				textarea
-					width: 100%
-					height: 183px
-			+media-breakpoint-up(lg)
-				+pad(null 15px)
-	.frm-captcha
-		display: flex
-		align-items: center
-		.frm-captcha-input
-			+pad(null 15px)
-			order: 1
-			label
-				display: none
-			input
-				display: block
-				width: 100%
-				font-size: 1rem
-				line-height: 1.5
-				color: #495057
-				border-radius: 0.25rem
-				-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-				transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-				transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
-				transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-				border: none
-				+pad(.9rem .9rem)
-				background: color-get($mau, trang)
-				+placeholder
-					color: #a7a7a7
-		.RadCaptcha_Default
-			width: auto!important
-	.frm-btnwrap
-		.frm-btn
-			padding-left: 15px
-			input[type="reset"]
-				display: none
-			input[type="submit"]
-				padding: .5rem 4rem
-				background: none
-				border-radius: 0
-				margin-top: 1rem
-				color: white
-				+bor-rad(25px)
-				text-transform: uppercase
-				// width: 50%
-				background-image: -moz-linear-gradient( 0deg, color-get($mau, main) 0%, color-get($mau, vang-1) 49%, color-get($mau, main) 100%)
-				background-image: -webkit-linear-gradient( 0deg, color-get($mau, main) 0%, color-get($mau, vang-1) 49%, color-get($mau, main) 100%)
-				background-image: -ms-linear-gradient( 0deg, color-get($mau, main) 0%, color-get($mau, vang-1) 49%, color-get($mau, main) 100%)
-	+media-breakpoint-up(lg)
+.canhcam-form-1
+	.wrap-form
 		position: relative
+		h1
+			width: 100%
+			padding-left: 15px
+			margin-top: 0
 		> div
+			display: flex
+			flex-wrap: wrap
 			.form-group
-				width: 50%
-				&.qparagraph
+				width: 100%
+				input , textarea
+					display: block
 					width: 100%
-		// .frm-btnwrap
-		// 	+pos(abs , null 15px 2rem null)
+					font-size: 1rem
+					line-height: 1.5
+					color: #495057
+					border-radius: 0.25rem
+					-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					+pad(.9rem .9rem)
+					background: color-get($mau, trang)
+					border: 1px solid #e5e5e5
+					+placeholder
+						color: #a7a7a7
+				&.qparagraph
+					textarea
+						width: 100%
+						height: 183px
+				+media-breakpoint-up(lg)
+					+pad(null 15px)
+		.frm-captcha
+			display: flex
+			align-items: center
+			.frm-captcha-input
+				+pad(null 15px)
+				order: 1
+				label
+					display: none
+				input
+					display: block
+					width: 100%
+					font-size: 1rem
+					line-height: 1.5
+					color: #495057
+					border-radius: 0.25rem
+					-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					border: none
+					+pad(.9rem .9rem)
+					background: color-get($mau, trang)
+					+placeholder
+						color: #a7a7a7
+			.RadCaptcha_Default
+				width: auto!important
+		.frm-btnwrap
+			margin-bottom: 1rem
+			+media-breakpoint-up(lg)
+				margin-bottom: 0
+			.frm-btn
+				padding-left: 15px
+				input[type="reset"]
+					display: none
+				input[type="submit"]
+					padding: .5rem 4rem
+					background: none
+					border-radius: 0
+					margin-top: 1rem
+					color: white
+					+bor-rad(25px)
+					text-transform: uppercase
+					// width: 50%
+					background-image: -moz-linear-gradient( 0deg, color-get($mau, main) 0%, color-get($mau, vang-1) 49%, color-get($mau, main) 100%)
+					background-image: -webkit-linear-gradient( 0deg, color-get($mau, main) 0%, color-get($mau, vang-1) 49%, color-get($mau, main) 100%)
+					background-image: -ms-linear-gradient( 0deg, color-get($mau, main) 0%, color-get($mau, vang-1) 49%, color-get($mau, main) 100%)
+		+media-breakpoint-up(lg)
+			position: relative
+			> div
+				.form-group
+					width: 50%
+					&.qparagraph
+						width: 100%
+			// .frm-btnwrap
+			// 	+pos(abs , null 15px 2rem null)
 
 
